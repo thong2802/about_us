@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>about_us</title>
     <style>
          *{
@@ -39,25 +41,29 @@
          .item{
             margin-top: -15px; 
             text-align: center;
+            
             font-family: 'Courier New', Courier, monospace;
          }
          .post-list{
              display: grid;
              grid-template-columns: repeat(2, 1fr);
-             grid-gap: 0 5px;
+             grid-gap: 0 0px;
          }
     
          @media screen and (max-width: 1220px) {
 
             .post-list { 
                 grid-template-columns: 100%;
-                grid-gap: 1px 0;
+                grid-gap: 1px 1px;
+                padding-top: 1px;
+            
             } 
          }
     </style>
 </head>
 <body>
 <div class="danhsach">
+    
     <div class="container">
         <div style="" class="post-item">
            <img style="width: 100%; border-radius: 12px;" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/about-us-header_1024x1024.jpg?v=1616337580" 
@@ -75,26 +81,90 @@
           <p>&nbsp;</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="fade-left">
         <div class="post-list">
             <div class="post-item">
                 <img style="width: 100%; height: 500px; border-radius: 10px; object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/photo_2021-03-21_22-16-28_1024x1024.jpg?v=1616342538" 
                      alt="" class="post-image">
              </div>
 
-             <div style="background:#e1dfd6 ; border-radius: 12px; height: 500px;" class="post-item">
+             <div style="background:#e1dfd6 ; border-radius: 12px; height: 500px; " class="post-item">
                 <h1 style="margin-top: 40px;" class="style_text">Premium Quality</h1>
-                <p style="padding: 35px;" class="item">
-                    We use the most endurable kinds of leather to make our watch straps, wallets, and other products. Every production stage has our quality control to ensure that no error or mistake can affect their quality.&nbsp;</p>
-                    <p>&nbsp;</p>
+                <p style="padding: 35px; text-align: left;" class="item">
+                    We use the most endurable kinds of leather to make our watch straps, wallets, and other products. Every production stage has our quality control to ensure that no error or mistake can affect their quality.&nbsp;</p> 
                 </p>
                 <p>&nbsp;</p>
              </div>
         </div>
-
-        
     </div>
-</div>
 
+    <div class="container" data-aos="fade-right">
+        <div class="post-list">
+             <div style="background:#e1dfd6 ; border-radius: 12px; height: 500px; " class="post-item">
+                <h1 style="margin-top: 40px;" class="style_text">High Level Of Craftsmanship</h1>
+                <p style="padding: 35px; text-align: left;" class="item">
+                    As a team of experienced craftsmen, we share our passion for leather and put all our efforts into making every product. Each of our products is a unique combination of high craftsmanship and great enthusiasm.&nbsp;</p> 
+                </p>
+                <p>&nbsp;</p>
+             </div>
+
+             <div class="post-item">
+                <img style="width: 100%; height: 500px; border-radius: 10px; object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/photo_2021-03-21_18-05-22_2048x2048.jpg?v=1616342504" 
+                     alt="" class="post-image">
+             </div>
+        </div>
+    </div>
+
+    <div class="container" data-aos="fade-left">
+        <div class="post-list">
+            <div class="post-item">
+                <img style="width: 100%; height: 500px; border-radius: 10px; object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/photo_2021-03-21_22-16-34_2048x2048.jpg?v=1616342551" 
+                     alt="" class="post-image">
+             </div>
+
+             <div style="background:#e1dfd6 ; border-radius: 12px; height: 500px; " class="post-item">
+                <h1 style="margin-top: 40px;" class="style_text">Customization</h1>
+                <p style="padding: 35px; text-align: left;" class="item">
+                    We acknowledge that every customer has his/ her characteristics and preferences. Therefore, AugLeather provides the full options to customize your items. Just tell us how you would like your item, we will build it up to suit you best.&nbsp;</p> 
+                </p>
+                <p>&nbsp;</p>
+             </div>
+        </div>
+    </div>
+
+    <div class="container" data-aos="fade-right">
+        <div class="post-list">
+             <div style="background:#e1dfd6 ; border-radius: 12px; height: 500px; " class="post-item">
+                <h1 style="margin-top: 40px;" class="style_text">Best price</h1>
+                <p style="padding: 35px; text-align: left;" class="item">
+                    Price is the biggest that differentiates us from other luxury brands. With similarities in aesthetics and quality, we are proud to offer the most affordable prices.&nbsp;</p> 
+                </p>
+                <p>&nbsp;</p>
+             </div>
+
+             <div class="post-item">
+                <img style="width: 100%; height: 500px; border-radius: 10px; object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/photo_2021-03-21_22-16-42_2048x2048.jpg?v=1616342617" 
+                     alt="" class="post-image">
+             </div>
+        </div>
+    </div>
+    
+    <div style="padding-bottom: 30px;" class="container" >
+        <h1 class="style_text"></h1>
+           <p class="item">
+            Customers stay the first on our priority list of all time. <br/> Therefore, your comfort, satisfaction, and feedback are all highly valued!          
+           </p>
+          <p>&nbsp;</p>
+    </div>
+  
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 500,
+    duration: 1000
+  }
+);
+</script>
 </body>
 </html>
