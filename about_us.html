@@ -49,7 +49,68 @@
              grid-template-columns: repeat(2, 1fr);
              grid-gap: 0 0px;
          }
-    
+         
+         .scrolldown{
+             position: absolute; 
+             bottom: 20px;
+            
+             left: 47%;
+             width: 40px;
+             height: 40px;
+             z-index: 3;
+             
+             transform:   rotate(45deg);
+         }
+         .scrolldown span{
+            position: absolute;  
+            top: 0;
+            left: 0;
+            display: block;
+            
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid #424242;
+            border-right : 2px solid #424242;
+            animation: animate 1.5s linear infinite;
+            opacity: 0;
+
+         }
+         
+         .scrolldown span:nth-child(1)
+         {
+            transform: translate(-15px, -15px);
+              animation-delay: -0.4s;
+         }
+         .scrolldown span:nth-child(2)
+         {
+            transform: translate(0, 0);
+            animation-delay: -0.2s;
+         }
+         .scrolldown span:nth-child(3)
+         {
+            transform: translate(15px, 15px);
+             animation-delay: -0s;
+         }
+         @keyframes animate 
+         {
+            0% {
+                top: -5px;
+                left: -5px;
+                opacity: 0 ;
+            }
+            25% {
+                top: 0px;
+                left: 0px;
+                opacity: 1  ;
+            }
+            50%,100% {
+                top: 5px;
+                left: 5px;
+                opacity: 0  ;
+            }
+             
+         }
+         
          @media screen and (max-width: 1220px) {
 
             .post-list { 
@@ -57,7 +118,17 @@
                 grid-gap: 1px 1px;
                 padding-top: 1px;
             
-            } 
+            }
+            .scrolldown{
+             position: absolute; 
+             bottom: 0;
+             left: 47%;
+             width: 40px;
+             height: 40px;
+             z-index: 3;
+             
+             transform:   rotate(45deg);
+         } 
          }
     </style>
 </head>
@@ -80,8 +151,16 @@
            </p>
           <p>&nbsp;</p>
     </div>
+    
+    
+    <div  class="scrolldown">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+   
 
-    <div class="container" data-aos="fade-left">
+    <div style="z-index: 99;position: relative;" class="container" data-aos="fade-left">
         <div class="post-list">
             <div class="post-item">
                 <img style="width: 100%; height: 500px; border-radius: 10px; object-fit: cover;" src="https://cdn.shopify.com/s/files/1/0522/1433/3633/files/photo_2021-03-21_22-16-28_1024x1024.jpg?v=1616342538" 
@@ -102,7 +181,7 @@
         <div class="post-list">
              <div style="background:#e1dfd6 ; border-radius: 12px; height: 500px; " class="post-item">
                 <h1 style="margin-top: 40px;" class="style_text">High Level Of Craftsmanship</h1>
-                <p style="padding: 35px; text-align: left;" class="item">
+                <p style="padding-left: 20px; text-align: left; padding-bottom: 10px; padding-right: 10px ; padding-top: 5px;" class="item">
                     As a team of experienced craftsmen, we share our passion for leather and put all our efforts into making every product. Each of our products is a unique combination of high craftsmanship and great enthusiasm.&nbsp;</p> 
                 </p>
                 <p>&nbsp;</p>
@@ -165,6 +244,9 @@
     duration: 1000
   }
 );
+</script>
+<script>
+   
 </script>
 </body>
 </html>
